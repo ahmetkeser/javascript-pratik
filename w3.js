@@ -46,6 +46,36 @@ addPBlock("---------------------------------------------------------------------
 addPBlock("silice(-12,-6) -12.eleman dahil değil, -6.eleman dahil")
 addPBlock("Apple, Banana, Kiwi")
 addPBlock(strElements.slice(-12,-6))
+addPBlock("---------------------------------------------------------------------")
 
 //*********************************************************** */
 // substring(start, end)
+/* - parametreler kullanılmaması gerekir
+start değeri end değerinden büyükse otomatik yer değiştirir. */
+addPBlock("substring(start, end)")
+addPBlock(".subsitring(5,2) start değeri end değerinden büyük fakat otomatik yer değiştirebiliyor")
+addPBlock("Apple, Banana, Kiwi")
+addPBlock(strElements.substring(5,2))
+addPBlock("---------------------------------------------------------------------")
+addPBlock(".subsitring(-7) - değerler sağlıklı çalışmaz")
+addPBlock("Apple, Banana, Kiwi")
+addPBlock(strElements.substring(-7))
+//*********************************************************** */
+// substr(start, length)
+/*burada start parametresi ve o parametreden sonraki karakter uzunluğu ile çalışır
+*/
+addPBlock("---------------------------------------------------------------------")
+addPBlock("substr(start, length))")
+addPBlock(".substr(2,8) 2.karakterden itibaren 8 adet karakter alır")
+addPBlock("Apple, Banana, Kiwi")
+addPBlock(strElements.substr(2,8))
+addPBlock("---------------------------------------------------------------------")
+addPBlock(".substr(7) 7.karakterden itibaren sonuna kadar alır")
+addPBlock("Apple, Banana, Kiwi")
+addPBlock(strElements.substr(7))
+addPBlock("---------------------------------------------------------------------")
+addPBlock(".substr(-8) parametre - ise konum dizenin sonundan itibaren sayılır")
+addPBlock("Apple, Banana, Kiwi")
+addPBlock(strElements.substr(-8))
+
+
