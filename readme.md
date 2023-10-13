@@ -1,0 +1,1 @@
+## Bu repo javascript eğitimimde pratik yapma amacı ile oluşturulmuştur.
