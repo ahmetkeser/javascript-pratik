@@ -19,8 +19,15 @@
                         // b.p=300;
                         // b.q=400;
                         // console.log(b.x,b.y,b.p,b.q);
-let carry1=document.createElement(InputEvent)
-let carry
+
+
+
+let genel ={
+    ders1: "tütkçe",
+    ders2: "matematik",
+    ders3 : "tarih",
+    ders4 : "sosyal bilimler"
+}
 let l1Ogrenci={
     __proto__ :genel,
     ders1: "sosyal bilimlere giriş",
@@ -35,26 +42,57 @@ let l3Ogrenci={
     ders2: "profosyonel beceri"
 }
 
-let genel ={
-    genel1: "tütkçe",
-    genel2: "matematik",
-    genel3 : "tarih",
-    genel4 : "sosyal bilimler"
-}
-let sayısal ={
+let sayisal ={
     __proto__ :genel,
-    sayısal1: "geometri",
-    sayısal2: "trigonometri",
-    sayısal3: "üssel kavramlar"
+    ders1: "geometri",
+    ders2: "trigonometri",
+    ders3: "üssel kavramlar"
 }
-let sözel ={
+let sayisalSon={
+    ders1:"İleri Gemometri",
+    ders2: "ileri Trigonometri",
+    ders3: "Bilimsel Matematik"
+}
+let sozel ={
     __proto__:genel,
     ders1: "ülkeler tarihi",
-    ders2: "derin tarih"
+    ders2: "derin tarih",
+    ders3: "Tarihin İzi"
 }
-let oğrenci;
-if(ögrenci==1){
-    let ogrenciNo = Object.create(genel)
-    ogrenciNo=Object.create(l1Ogrenci)
-    if()
+let sozelSon ={
+    ders1: "Derin tarihi",
+    ders2: "Bilimsel tarih"
 }
+let sor1 = prompt("kaçıncı sınıftasın : Çıkış için (4)");
+    if (sor1 == 1)
+    {
+        let ogrenciNo = Object.create(genel)
+        ogrenciNo=Object.create(l1Ogrenci)
+        console.log("soru 1")
+        console.log(ogrenciNo)
+    }else if(sor1 == 4){
+        console.log("durdurulacak")
+        kontrol="x"
+    }else if(sor1==2 || sor1==3){
+        let sor2= prompt("Hangi bölümdesiniz (1) Sayısal (2) Sözel")
+        if(sor1 ==2 && sor2 ==1){
+            console.log("2/1")
+            console.log(Object.create(l2Ogrenci))
+            console.log(Object.create(sayisal))
+        }else if(sor1 ==2 && sor2 ==2){
+            console.log("2/2")
+            console.log(Object.create(l2Ogrenci))
+            console.log(Object.create(sozel))
+        }else if(sor1==3 && sor2 ==1){
+            console.log("3/1")
+            console.log(Object.create(l3Ogrenci))
+            console.log(Object.create(sayisalSon))
+        }else if(sor1==3 && sor2 ==2){
+            console.log("3/2")
+            console.log(Object.create(l3Ogrenci))
+            console.log(Object.create(sozelSon))
+        }
+    }else {
+        console.log("yanlış giriş yaptın")
+    }
+console.log("işlem bitti")
