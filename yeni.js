@@ -8,9 +8,12 @@ Object.defineProperty(o, 'y', {
     get: function() { return 'old'; }
 });
 
-o.x = 'new'; // etkisi yok
-console.log('o.x:', o.x);
-console.log(o)
+var a = Object.create(o);
 
-o.y = 'new'; // etkisi yok
-console.log('o.y:', o.y);
+a.x = 'new';
+console.log('a.x:', a.x);
+
+a.y = 'new';
+console.log('a.y:', a.y);
+
+console.log(a);
