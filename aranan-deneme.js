@@ -10,9 +10,9 @@
 // }
 // console.log(ymetin);
 
-// // Burada metin içersinde değiştirmek istediğim kelimenin cümle içersinde
-// // kaç defa geçtiğini bulduktan sonra adet sayısı kadar replace yaptırdım ve 
-// // Aşağıdaki satırda bunu replace /g tagı ile yapabiliyoruz.
+// Burada metin içersinde değiştirmek istediğim kelimenin cümle içersinde
+// kaç defa geçtiğini bulduktan sonra adet sayısı kadar replace yaptırdım ve 
+// Aşağıdaki satırda bunu replace /g tagı ile yapabiliyoruz.
 // console.log(metin)
 // let sonmetin=metin.replaceAll(/ahmet/g,"Deniz")
 // console.log(sonmetin)
@@ -26,7 +26,7 @@
 //     let r = Math.floor(Math.random()*9)+1;
 
 //     if(dizi.indexOf(r)== -1 && kontrol!=9){// time 0.4951171875 ms
-//     //if(dizi.includes(r)== false && kontrol!=9){    //0.737060546875 ms
+    //if(dizi.includes(r)== false && kontrol!=9){    //0.737060546875 ms
 //         dizi[kontrol]=r;
 //         console.log("eleman eklendi :"+r);
 //         kontrol ++;
