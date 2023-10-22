@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 debugger;// F10 ile adım adım takip edilebiliyor
 let control = confirm("seçiminiz");
 if (control==true){
@@ -10,7 +10,7 @@ debugger;
 location.reload(); // programı tekrar başlatır :D
 
 
-=======
+
    
 
 let set = new Set([9, 15, "a string", {"objectKey": "objectValue"}]);
@@ -65,4 +65,4 @@ console.log(arrFromSet);
 // console.time('Set'); 
 // result = set.has("Anne"); 
 // console.timeEnd('Set');
->>>>>>> e20123920b399e622e4794c00a672e728423da01
+
